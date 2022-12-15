@@ -1,0 +1,605 @@
+/*
+Theme Name: Tenders Kenya 2014
+Theme URI: http://klay-klay.com
+Version: 1.0.0
+Author: Klay-klay
+Author URI: http://klay-klay.com
+*/
+
+/* HEADS UP: Everything else that you will normally find here can be found in the library/less/wp.less */
+
+/* COMMON */
+.white { color: #FFF; }
+.center { text-align: center; }
+.right { text-align: right; }
+.left { text-align: left; }
+
+/* TOP */
+.top_most.full_container {
+background: #dfdfdf;
+}
+.top-third {
+/* background: #734927;	 */
+}
+#primary_nav li {
+list-style: none;
+display: inline-block;
+}
+#primary_nav {
+padding: 0px;
+margin: 30px 0px 10px;
+float: right;
+text-transform: uppercase;
+font-size: 1.2em;
+}
+.navbar-header {
+width: 100%;
+}
+#primary_nav a {
+text-decoration: none;	
+font-weight: bold;
+padding: 12px 18px;
+}
+
+#home_menu a {
+color: #000000;
+}
+#browse_menu a {
+color: #929292;
+}
+#home_menu a:hover {
+color: #000;
+}
+#browse_menu a:hover {
+color: #000;
+}
+#upload_menu a {
+color: #FFF;
+background: #ef4d2d;
+
+border-radius: 5px;
+}
+#upload_menu a:hover {
+color: #FFF;
+background: #000;
+}
+.top_most.full_container #menu-top-menu a {
+font-family: Open sans condensed, arial;
+font-weight: 600;
+text-transform: uppercase;
+color: #000;
+padding: 10px 10px;
+border-right: 1px solid rgba(0,0,0,0.1);
+}
+li#menu-item-32 a {
+color: #ef4d2d !important;
+border-left: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+#login_links {
+margin: 0px;
+padding: 0px 0px 0px 10px;
+float: right;
+background: rgba(55, 26, 1, .1);
+}
+#login_links li {
+list-style: none;
+display: inline-block;
+}
+#login_links li a {
+padding: 10px 3px;
+display: block;
+}
+
+/* HEADER */
+#tax_drill_01 ul li {
+display: inline-block;
+}
+#tax_drill_01 ul {
+margin: 0px;
+padding: 0px;
+float: left;
+}
+#tax_drill_01 form {
+width: 525px;
+margin: 0 auto 30px;
+position: relative;
+}
+#tax_drill_01 select {
+display: block;
+background: transparent;
+border: 3px solid #FFF;
+border-radius: 9px;
+padding: 10px;
+color: #FFF;
+line-height: 20px;
+max-width: 200px;
+}
+#tax_drill_01 option {
+background: #6c4423;
+}
+.taxonomy-drilldown-dropdowns p input {
+background: #ffffff;
+border: 0px;
+padding: 9px 15px;
+margin: 24px 2px 0px 6px;
+border-radius: 6px;
+font-size: 20px;
+}
+a.taxonomy-drilldown-reset {
+color: #FFF;
+display: none;
+}
+.top-third h4 {
+display: inline-block;
+margin-top: 50px;
+float: left;
+font-size: 20px;
+text-transform: uppercase;
+font-weight: bold;
+color: rgba(255,255,255,0.5);
+margin-left: 70px;
+}
+
+
+/* HOME */
+#home_ad_01 {
+text-align: center;
+margin: 10px auto;
+}
+.top_fourth_full {
+background: #F7F7F7;	
+}
+#tender_list_A li {
+list-style: none;
+padding-bottom: 10px;
+margin-bottom: 10px;
+border-bottom: 2px solid #ef4d2d;
+}
+#tender_list_A {
+clear: both;
+padding: 30px 0px 0px 0px;
+margin: 0px;
+}
+.home_slide {
+margin: 0px 0px 0px -10px;
+padding: 0px;
+}
+.A_list_link {
+font-weight: bold;
+color: #000;
+}
+.A_list_link:hover {
+color: #ef4d2d;
+}
+
+.view_all {
+width: 100%;
+height: auto;
+position: relative;
+margin: 0px 0px 10px;
+}
+.view_all a {
+border: 3px solid #ef4d2d;
+padding: 5px;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 13px;
+text-align: center;
+margin: 0 auto;
+width: 100px;
+position: relative;
+display: block;
+}
+.view_all a:hover {
+text-decoration: none;
+color: #000;
+border: 3px solid #000;
+}
+
+.custom_meta {
+margin-top: 10px;
+text-transform: uppercase;
+}
+.custom_meta p {
+color: #B1B1B1;
+font-weight: bold;
+font-size: 12px;
+}
+
+
+
+/* FOOTER */
+#footer_container { background: #dadada; padding: 20px 0px; }
+#social_accounts {
+position: fixed;
+top: 240px;
+padding: 0px;
+margin-left: 10px;
+}
+#social_accounts li {
+list-style: none;
+}
+
+
+/* SINGLE TENDER */
+.tender_image {
+text-align: center;
+background: #F9F9F9;
+padding: 15px;
+margin-bottom: 15px;
+border: 5px solid #000;
+min-height: 330px;
+}
+.tender_image img {
+width: 100%;
+height: auto;
+}
+
+body.page-id-47 h1, body.page-id-47 .post_content {
+text-align: center;
+}
+html {
+background: #dadada;	
+}
+
+.custom_meta_single_in li {
+list-style: none;
+}
+.custom_meta_single_in {
+padding: 0px;
+}
+.custom_meta_single {
+background: rgba(0, 0, 0, 0.1);
+padding: 15px;
+line-height: 1.7em;
+}
+.tender_info {
+border-top: 3px solid #CCC;
+padding-top: 10px;
+margin-top: 20px;
+}
+
+.center { text-align: center; }
+article#post-47 {
+max-width: 600px;
+text-align: center;
+width: 100%;
+margin: 0 auto;
+padding: 20px;
+}
+article#post-47 {
+background: #FFF;
+}
+
+input#input_1_1 {
+width: 100%;
+}
+
+input#input_1_1, #input_1_2 {
+font-size: 19px;
+padding: 6px 10px;
+}
+input#gform_submit_button_1, input#lwa_wp-submit2, input#wp-submit {
+border: 0px;
+color: #FFF;
+background: rgb(0, 129, 255);
+padding: 10px 30px;
+font-size: 1.6em;
+}
+input#gform_submit_button_1:hover, input#lwa_wp-submit2:hover, input#wp-submit:hover {
+background: rgb(0, 105, 207);
+}
+
+.logout_le_link {
+background: #ef4d2d;
+color: #FFF;
+position: absolute;
+margin-top: -20px;
+margin-left: 196px;
+padding: 10px 30px;
+}
+
+.logout_le_link:hover {
+background: #B62A0E;
+color: #FFF;
+text-decoration: none;
+}
+
+#login input#wp-submit {
+width: 250px;
+}
+#login label {
+display: block;
+}
+#user_login, #user_pass {
+width: 250px;
+padding: 8px;
+}
+body.page-id-47 #login {
+max-width: 290px;
+text-align: left;
+width: 100%;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+
+.le_search2 {
+width: 100%;
+height: auto;
+position: relative;
+display: block;
+clear: both;
+float: left;
+}
+.acps_form_container {
+width: 100%;
+height: auto;
+text-align: center;
+max-width: 1000px;
+margin: 0 auto;
+position: relative;
+}
+
+#tax_drill_01 ul li {
+display: inline-block;
+}
+#tax_drill_01 ul {
+margin: 0px;
+padding: 0px;
+float: left;
+}
+#tax_drill_01 form {
+width: 100%;
+margin: 0 auto 20px;
+position: relative;
+}
+#tax_drill_01 select {
+display: block;
+background: transparent;
+border: 3px solid #FFF;
+border-radius: 9px;
+padding: 10px;
+color: #FFF;
+line-height: 20px;
+max-width: 200px;
+}
+#tax_drill_01 option {
+background: #6c4423;
+}
+.taxonomy-drilldown-dropdowns p input {
+background: #ffffff;
+border: 0px;
+padding: 9px 15px;
+margin: 24px 2px 0px 6px;
+border-radius: 6px;
+font-size: 20px;
+}
+a.taxonomy-drilldown-reset {
+color: #FFF;
+display: none;
+}
+.top-third h4 {
+display: block;
+margin-top: 10px;
+float: none;
+font-size: 20px;
+text-transform: uppercase;
+font-weight: bold;
+color: rgba(255,255,255,0.5);
+margin-left: 0px;
+text-align: center;
+}
+input.acps_text_input {
+display: block;
+background: transparent;
+border: 3px solid #FFF;
+border-radius: 9px;
+padding: 10px;
+color: #FFF;
+line-height: 20px;
+max-width: 200px;
+}
+input.acps_submit {
+background: #ffffff;
+border: 0px;
+padding: 9px 40px;
+margin: 0px 2px 0px 6px;
+border-radius: 6px;
+font-size: 20px;
+}
+.acps_form_container p {
+width: 18%;
+position: relative;
+float: left;
+margin-right: 10px;
+}
+.top-third.white.full_container.clearfix {
+min-height: 110px;
+}
+.acps_form_container p:last-child {
+margin-right: 0px;
+}
+
+
+h1.archive_title.h2 {
+text-transform: uppercase;
+font-size: 26px;
+margin: 0px 0px 0px 0px;
+}
+
+#tender_list_A li h3 a {
+color: #000;
+}
+#tender_list_A li h3 a:hover {
+color: #ef4d2d;
+}
+
+
+ul#menu-about-us li a {
+padding: 10px 0px;
+display: block;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+font-size: 1.2em;
+}
+ul#menu-about-us li {
+list-style: none;
+}
+ul#menu-about-us {
+padding: 0px;
+margin: 30px 0px 0px 0px;
+}
+
+
+body.page-template-page-left-sidebar-php .top-third.white.full_container,
+body.page-template-default .top-third.white.full_container {
+display: none;
+}
+
+body.page-template-page-left-sidebar-php div#sidebar1 {
+width: 18%;
+}
+body.page-template-page-left-sidebar-php div#main {
+width: 82%;
+}
+
+.menu-about-us-container .current-menu-item a {
+color: #000;
+}
+
+div#sidebar2 {
+  margin-top: 30px;
+}
+body.page-template-page-left-sidebar .widget_ad {
+  display: none;
+}
+.footer-links .menu {
+  padding-left: 0 !important;
+}
+
+.bx-controls-auto {
+    display: none;
+}
+.footer-links.clearfix {
+    float: none;
+    text-align: center;
+}
+ul#menu-footer-nav-menu {
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    float: left !important;
+}
+ul#menu-footer-nav-menu li {
+    display: inline-block;
+    text-align: center;
+    float: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    padding-right: 15px;
+}
+ul#menu-footer-nav-menu li:last-child {
+    border-right: 0px solid #000;
+}
+
+
+
+
+@media (min-width: 0px) and (max-width: 980px) {
+	body.page-template-page-left-sidebar-php div#sidebar1 {
+	width: 100%;
+	}
+	body.page-template-page-left-sidebar-php div#main {
+	width: 100%;
+	}
+}	
+
+@media (min-width: 0px) and (max-width: 768px) {
+	#primary_nav {
+	padding: 0px;
+	margin: 20px 0px 10px;
+	float: none;
+	text-transform: uppercase;
+	font-size: .9em;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	clear: both;
+	}
+	#primary_nav a {
+	padding: 9px 4px;
+	}
+	a.navbar-brand {
+	margin-bottom: 10px;
+	}
+	div#home_ad_01 img {
+	width: 100%;
+	height: auto;
+	}
+	ul#social_accounts {
+	display: none;
+	}
+	h3, .h3 {
+	font-size: 19px;
+	}
+	.navbar-toggle {
+	margin-right: -20px;
+	}
+}
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+	a.navbar-brand img {
+	width: 100%;
+	height: auto;
+	}
+	a.navbar-brand {
+	max-width: 60%;
+	height: auto;
+	}	
+	.acps_form_container p {
+	width: 100%;
+	position: relative;
+	float: none;
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+	display: block;
+	}
+	input.acps_text_input, #tax_drill_01 select {
+	max-width: initial;
+	}
+	.acps_submit {
+	display: block;
+	width: 62%;
+	box-sizing: content-box;
+	text-align: center;
+	}
+	.home_slide {
+	display: none;
+	}
+	.navbar-header {
+	width: 100%;
+	padding: 0px !important;
+	margin: 0px !important;
+	}
+
+}
+
+
+@media (min-width: 0px) and (max-width: 320px) {
+	ul#primary_nav li a {
+	display: block;
+	}
+	ul#primary_nav li {
+	display: block;
+	margin: -5px 10px;
+	background: #F2F2F2;
+	}
+
+
+}
+
+

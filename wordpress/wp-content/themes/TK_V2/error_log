@@ -1,0 +1,443 @@
+[04-Jun-2017 02:08:40 America/Denver] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[05-Jun-2017 01:10:28 America/Denver] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:05 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[02-Jan-2019 19:04:06 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:03 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/pdo_mysql.so' - /usr/php/56/usr/lib64/php/modules/pdo_mysql.so: undefined symbol: mysqlnd_allocator in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: pdo_sqlite: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: pdo_pgsql: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: magickwand: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: mailparse: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/php/56/usr/lib64/php/modules/oauth.so' - /usr/php/56/usr/lib64/php/modules/oauth.so: undefined symbol: zval_used_for_init in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: oci8: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-Feb-2019 14:07:04 UTC] PHP Warning:  PHP Startup: uploadprogress: Unable to initialize module
+Module compiled with module API=20131226
+PHP    compiled with module API=20151012
+These options need to match
+ in Unknown on line 0
+[23-May-2019 23:54:25 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:36 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:36 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:36 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:37 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:46 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:46 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:47 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[11-Oct-2019 12:33:47 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[18-Nov-2019 08:00:19 UTC] PHP Fatal error:  Call to undefined function get_header() in /home3/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[08-Dec-2019 00:28:00 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[09-Dec-2019 09:37:23 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[13-Dec-2019 02:50:23 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[13-Dec-2019 23:08:00 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[15-Dec-2019 03:19:59 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[15-Dec-2019 23:51:56 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[13-Jan-2020 14:31:55 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[13-Jan-2020 21:29:58 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[15-Jan-2020 16:47:48 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[15-Jan-2020 23:55:39 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[30-Jan-2020 13:23:44 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:23:46 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:23:47 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:23:49 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:22 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:24 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:26 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:27 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:56 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:58 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:24:59 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-Jan-2020 13:25:01 UTC] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[16-Apr-2020 20:43:31 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[17-Apr-2020 11:31:00 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[24-Apr-2020 15:54:04 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[25-Apr-2020 06:53:13 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/404.php on line 1
+[12-Sep-2020 09:19:40 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[12-Sep-2020 09:19:41 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[12-Sep-2020 09:19:43 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[12-Sep-2020 09:19:43 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[12-Sep-2020 09:19:45 America/Boise] PHP Fatal error:  Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[26-May-2021 14:46:57 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[30-May-2022 12:39:20 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[15-Jul-2022 16:45:01 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[13-Nov-2022 18:36:16 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[25-Nov-2022 00:38:53 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1
+[25-Nov-2022 00:38:54 America/Boise] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home4/tendersk/public_html/wp-content/themes/TK_V2/index.php on line 1

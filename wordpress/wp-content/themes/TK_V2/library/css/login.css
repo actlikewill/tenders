@@ -1,0 +1,56 @@
+/* LOGIN CSS */
+
+/* login Page */
+body.login {}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}
+
+
+.login h1 a {
+color: #000;
+height: 74px !important;
+font-size: 20px;
+width: 100% !important;
+background-size: initial !important;
+}
+body.login {
+background: #dbd2cf !important;
+}
+.login #backtoblog a, .login #nav a {
+color: rgba(0, 0, 0, 0.8) !important;
+font-weight: 800 !important;
+font-size: 1.2em !important;
+text-align: center !important;
+}
+p#nav {
+text-align: center !important;
+}
+p#backtoblog {
+display: none !important;
+}
+
+.login .message {
+background-color: rgba(255, 255, 255 ,0.2);
+}
+
+#wp-admin-bar-wp-logo {
+display: none;
+}
+#wpadminbar {
+background: #712F00;
+}
