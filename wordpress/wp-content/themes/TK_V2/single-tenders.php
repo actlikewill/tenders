@@ -155,6 +155,15 @@
 				<?php echo date('M d, Y', $time2); ?>
 				<?php } ?>
 				</li>
+				
+				<?php if($free_to_view) { ?>
+					<li><span style="display:flex;"><span class="typcn typcn-eye-outline"></span> <span class="meta_intro">VIEWS: </span>
+					<?php if( function_exists( 'pvc_post_views' )) { ?>
+					<?php echo pvc_post_views($post_id = get_the_ID(), $echo = true); ?>
+					<?php } ?></span>
+					</li>
+				 <?php }?>
+				
 			</ul>
 
 		</div>

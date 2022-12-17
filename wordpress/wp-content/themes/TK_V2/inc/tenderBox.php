@@ -39,7 +39,6 @@
 						
 			$tenderDocs = add_tender_documents( $tenderDocIds );
 			$tenderDocLink = get_field('link_to_tender_documents');
-
 			$free_to_view = get_field('free_to_view');
 
 		?>
@@ -72,13 +71,13 @@
 			<?php echo date('M d, Y', $time2); ?>
 			<?php } ?>
 			</li>
-
-			<li class="t-org">
-			<?php if ( $free_to_view ) { ?>
-				<a style="background:orange; color: white; float:right; padding: 0 5px;"><strong>SPONSORED</strong></a>
-			<?php } ?>
-			</li>
-
 		</ul>
+		
+        <div>
+			<?php if ( $free_to_view ) { ?>
+				<a style="font-size:.9em;font-family:Roboto Condensed,sans-serif;text-transform-uppercase;background:#ef4d2d; color: white; float:right; padding: 0 5px;"><strong>SPONSORED</strong></a>
+			<?php } ?>
+		</div>
 	</div>	
 </div>	
+
