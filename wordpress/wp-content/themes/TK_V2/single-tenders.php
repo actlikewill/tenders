@@ -109,10 +109,12 @@
 	    array_push( $active_member, $active );
 	}
 	*/
+	
+	$free_to_view = get_field('free_to_view');
 
 	$user_id = get_current_user_id();
 
-	if ( is_user_logged_in() && wc_memberships_is_user_active_member( $user_id, 'annual-subscription-plan') || current_user_can('administrator') ) { ?>
+	if ( is_user_logged_in() && wc_memberships_is_user_active_member( $user_id, 'annual-subscription-plan') || current_user_can('administrator') || $free_to_view ) { ?>
 
 		<div class="col-sm-10 col-sm-offset-0 main_single_header headerA clearfix" role="main">
 			<header>
@@ -164,12 +166,15 @@
 						<?php
 						$tenderImg = get_field('tender_image');
 						$tenderImg2 = get_field('tender_image_2');
+						$tenderImg3 = get_field('tender_image_3');
 						$tenderDsc = get_field('short_description_of_tender');						
 						$tenderDocIds = [
 							'tender_document_1',
 							'tender_document_2',
 							'tender_document_3',
-							'tender_document_4'
+							'tender_document_4',
+							'tender_document_5',
+							'tender_document_6'
 						];
 						
 						$tenderDocs = add_tender_documents( $tenderDocIds );
@@ -185,6 +190,11 @@
 							<?php if ( $tenderImg2 != '' ) { ?>
 								<img src="<?php the_field('tender_image_2') ?>">
 							<?php } ?>
+							
+							<?php if ( $tenderImg3 != '' ) { ?>
+								<img src="<?php the_field('tender_image_3') ?>">
+							<?php } ?>
+
 
 						<?php } else {
 							the_post_thumbnail( 'large' );

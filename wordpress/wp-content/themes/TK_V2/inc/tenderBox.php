@@ -40,6 +40,8 @@
 			$tenderDocs = add_tender_documents( $tenderDocIds );
 			$tenderDocLink = get_field('link_to_tender_documents');
 
+			$free_to_view = get_field('free_to_view');
+
 		?>
 
 		<ul class="custom_meta custom_meta_list clean_list clearfix">
@@ -68,6 +70,12 @@
 			<li class="t_close"><span class="typcn typcn-lock-closed-outline"></span> <span class="meta_intro">CLOSE: </span> 
 			<?php if ( ! empty($date2)) { ?>
 			<?php echo date('M d, Y', $time2); ?>
+			<?php } ?>
+			</li>
+
+			<li class="t-org">
+			<?php if ( $free_to_view ) { ?>
+				<a style="background:orange; color: white; float:right; padding: 0 5px;"><strong>SPONSORED</strong></a>
 			<?php } ?>
 			</li>
 
