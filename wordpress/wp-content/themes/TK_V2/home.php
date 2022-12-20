@@ -126,7 +126,17 @@ Template Name: Homepage
 
 
 				<div id="tender_list_A2" class="clearfix tenderBox_out row clearfix">
-					<?php query_posts('posts_per_page=15&post_type=tenders');
+					<?php 
+					
+					    $query_posts_args = array(
+						'posts_per_page' => '15',
+						'post_type'=> 'tenders',
+						'meta_key' => 'free_to_view',
+						'orderby' => 'meta_value',
+						'order' => 'DESC'
+
+						);
+					    query_posts( $query_posts_args );
 
 						if(have_posts()) : for($count=0;have_posts();$count++) : the_post();
 						    $open = !($count%3) ? '<div class="row clearfix line_row">' : ''; //Create open wrapper if count is divisible by 3
@@ -141,19 +151,7 @@ Template Name: Homepage
 					<?php endif; ?>
 					<?php echo $count ? '</div>' : ''; //Close the last wrapper if post count is greater than 0 ?>
 
-
 				</div>	
-
-
-
-
-
-
-
-
-
-
-				
 				<div class="view_all">
 					<a href="http://tenderskenya.co.ke/tender/">View All</a>
 				</div>
