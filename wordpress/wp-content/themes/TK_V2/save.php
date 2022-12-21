@@ -56,39 +56,38 @@
 							$custom_posts_args = array(
 								'posts_per_page' => '15',
 								'post_type'=> 'tenders',						
-								'tax_query' => array(
-									array(
-										'taxonomy' => 'document-type',
-										'field' => 'slug',
-										'terms' => 'sponsored' 
+								'meta_query' => array(
+									'free_clause' => array(
+										'key' => 'free_to_view',
+										'value' => 1
 									),							
 								),
 								'orderby' => 'date',
 								'order' => 'DESC',
 								'paged'=> $page,						
 								);
-					    $q1 = new WP_Query( $custom_posts_args );
-
-							
-							
 							$custom_posts_args2 = array(
-								'posts_per_page' => (15 - $q1->found_posts),
+								'posts_per_page' => '15',
 								'post_type'=> 'tenders',						
-								'tax_query' => array(
-									array(
-										'taxonomy' => 'document-type',
-										'field' => 'slug',
-										'terms' => 'sponsored',
-										'operator' => 'NOT IN'
-									)							
+								'meta_query' => array(
+									'relation' => 'OR',
+									'not_free' => array(
+										'key' => 'free_to_view',
+										'value' => 0
+									),							
+									'not_exists' => array(
+										'key' => 'free_to_view',
+										'compare' => 'NOT EXISTS'
+									),							
 								),
 								'orderby' => 'date',
 								'order' => 'DESC',
 								'paged'=> $page,						
 								);
 
+					    $q1 = new WP_Query( $custom_posts_args );
 					    $q2 = new WP_Query( $custom_posts_args2 );
-					
+
 							$query = new WP_Query();
 							$query->posts = array_merge( $q1->posts, $q2->posts);
 							$query->post_count = $q1->post_count + $q2->post_count;

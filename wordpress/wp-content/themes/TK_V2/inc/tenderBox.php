@@ -40,6 +40,8 @@
 			$tenderDocs = add_tender_documents( $tenderDocIds );
 			$tenderDocLink = get_field('link_to_tender_documents');
 			$free_to_view = get_field('free_to_view');
+			$sponsored = has_term('sponsored', 'document-type');
+
 
 		?>
 
@@ -54,8 +56,24 @@
 			-->
 
 
+
+			<?php 
+
+				?>
+
+
 			<li class="t_org"><span class="typcn typcn-home-outline"></span> <?php echo get_the_term_list( $post->ID, 'company', '', ', ', '' ); ?></li>
-			<li class="t_type"><span class="typcn typcn-attachment"></span><?php echo get_the_term_list( $post->ID, 'document-type', '', ', ', '' ); ?></li>
+			<li class="t_type"><span class="typcn typcn-attachment"></span>
+			<?php 
+			
+			$terms = get_the_term_list( $post->ID, 'document-type', '', ', ', ''); 
+			$terms = explode(",",$terms);
+			$filtered_terms = array_filter($terms, function($term) {
+				return strpos($term, 'Sponsored') === false;
+			});
+				echo implode(",", $filtered_terms);
+			
+			?></li>
 			<li class="t_type"><span class="typcn typcn-document"></span> <span class="meta_intro">DOCUMENTS: </span>
 			<?php if (! empty( $tenderDocs ) || ! empty( $tenderDocLink)) { ?>
 			<span class="typcn typcn-tick" style="font-size:100%;color:green"></span>
@@ -74,10 +92,9 @@
 		</ul>
 		
         <div>
-			<?php if ( $free_to_view ) { ?>
+			<?php if ( $sponsored ) { ?>
 				<a style="font-size:.9em;font-family:Roboto Condensed,sans-serif;text-transform-uppercase;background:#ef4d2d; color: white; float:right; padding: 0 5px;"><strong>SPONSORED</strong></a>
 			<?php } ?>
 		</div>
 	</div>	
 </div>	
-

@@ -128,17 +128,51 @@ Template Name: Homepage
 				<div id="tender_list_A2" class="clearfix tenderBox_out row clearfix">
 					<?php 
 					
-					    $query_posts_args = array(
-						'posts_per_page' => '15',
-						'post_type'=> 'tenders',
-						'meta_key' => 'free_to_view',
-						'orderby' => 'meta_value',
-						'order' => 'DESC'
+		$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				
+							$custom_posts_args = array(
+								'posts_per_page' => '15',
+								'post_type'=> 'tenders',						
+								'tax_query' => array(
+									array(
+										'taxonomy' => 'document-type',
+										'field' => 'slug',
+										'terms' => 'sponsored' 
+									),							
+								),
+								'orderby' => 'date',
+								'order' => 'DESC',
+								'paged'=> $page,						
+								);
+					    $q1 = new WP_Query( $custom_posts_args );
 
-						);
-					    query_posts( $query_posts_args );
+							
+							
+							$custom_posts_args2 = array(
+								'posts_per_page' => (15 - $q1->found_posts),
+								'post_type'=> 'tenders',						
+								'tax_query' => array(
+									array(
+										'taxonomy' => 'document-type',
+										'field' => 'slug',
+										'terms' => 'sponsored',
+										'operator' => 'NOT IN'
+									)							
+								),
+								'orderby' => 'date',
+								'order' => 'DESC',
+								'paged'=> $page,						
+								);
 
-						if(have_posts()) : for($count=0;have_posts();$count++) : the_post();
+					    $q2 = new WP_Query( $custom_posts_args2 );
+
+					
+							$query = new WP_Query();
+							$query->posts = array_merge( $q1->posts, $q2->posts);
+							$query->post_count = $q1->post_count + $q2->post_count;
+		
+
+						if($query->have_posts()) : for($count=0;$query->have_posts();$count++) : $query->the_post();
 						    $open = !($count%3) ? '<div class="row clearfix line_row">' : ''; //Create open wrapper if count is divisible by 3
 						    $close = !($count%3) && $count ? '</div>' : ''; //Close the previous wrapper if count is divisible by 3 and greater than 0
 						    echo $close.$open;
@@ -151,9 +185,21 @@ Template Name: Homepage
 					<?php endif; ?>
 					<?php echo $count ? '</div>' : ''; //Close the last wrapper if post count is greater than 0 ?>
 
+
 				</div>	
+
+
+
+
+
+
+
+
+
+
+				
 				<div class="view_all">
-					<a href="http://tenderskenya.co.ke/tender/">View All</a>
+					<a href="/tender/">View All</a>
 				</div>
 			
 

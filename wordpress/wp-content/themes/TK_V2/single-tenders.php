@@ -110,11 +110,12 @@
 	}
 	*/
 	
-	$free_to_view = get_field('free_to_view');
+	
+	$sponsored = has_term('sponsored', 'document-type');
 
 	$user_id = get_current_user_id();
 
-	if ( is_user_logged_in() && wc_memberships_is_user_active_member( $user_id, 'annual-subscription-plan') || current_user_can('administrator') || $free_to_view ) { ?>
+	if ( is_user_logged_in() && wc_memberships_is_user_active_member( $user_id, 'annual-subscription-plan') || current_user_can('administrator') || $sponsored ) { ?>
 
 		<div class="col-sm-10 col-sm-offset-0 main_single_header headerA clearfix" role="main">
 			<header>
@@ -156,13 +157,13 @@
 				<?php } ?>
 				</li>
 				
-				<?php if($free_to_view) { ?>
+				<?php if($sponsored) { ?>
 					<li><span style="display:flex;"><span class="typcn typcn-eye-outline"></span> <span class="meta_intro">VIEWS: </span>
 					<?php if( function_exists( 'pvc_post_views' )) { ?>
 					<?php echo pvc_post_views($post_id = get_the_ID(), $echo = true); ?>
 					<?php } ?></span>
 					</li>
-				 <?php }?>
+				<?php }?>
 				
 			</ul>
 
@@ -171,7 +172,7 @@
 		<div id="main" class="col-sm-8 col-sm-offset-2 clearfix" role="main">
 		
 			<section class="post_content clearfix" itemprop="articleBody">
-				<div class="tender_image">
+				<div class="tender_image">Our Facebook
 						<?php
 						$tenderImg = get_field('tender_image');
 						$tenderImg2 = get_field('tender_image_2');

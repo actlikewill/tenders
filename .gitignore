@@ -16,4 +16,4 @@
 # And docker files
 !php.dockerfile
 !docker-compose.yml
-!nginx
+!nginx/default.conf

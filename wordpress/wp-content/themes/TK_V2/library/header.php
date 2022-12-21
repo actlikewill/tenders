@@ -159,7 +159,7 @@ font-size: 1.3em;
 						<form role="search" method="get" id="searchform" action="<?php bloginfo('home'); ?>">
 							<div class="le_search2">  <!-- 'company','document-type' -->
 
-								<?php echo do_shortcode('[acps id="64"]'); ?>
+								<?php echo do_shortcode('[acps id="38"]'); ?>
 
 							</div>
 						</form>
