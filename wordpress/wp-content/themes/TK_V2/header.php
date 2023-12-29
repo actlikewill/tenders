@@ -152,13 +152,20 @@ p.form-row.form-row-wide.create-account {
 		<div class="col-md-10 mast_nav">  
 		    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 		    	<div class="col-md-8 mast_navA">
+
+<?php 
+
+if ( is_user_logged_in()  ) { ?>
+
 				    <div class="mast_search">
 						<form role="search" method="get" id="searchform" action="<?php bloginfo('home'); ?>">
 							<div class="le_search3">  <!-- 'company','document-type' -->
-								<?php echo do_shortcode('[acps id="38"]'); ?>
+								<?php echo do_shortcode('[acps id="13"]'); ?>
 							</div>
 						</form>
 					</div>
+
+			<?php } ?>
 				</div>
 				
 				<div class="col-md-4 mast_navA">	

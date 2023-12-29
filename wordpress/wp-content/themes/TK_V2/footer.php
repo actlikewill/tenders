@@ -182,7 +182,7 @@
 					</nav>
 					
 					<ul class="center foot_items">
-						<li>All Rights Reserved. TendersKenya &copy; <?php echo date("Y") ?> | By <a href="http://zedafrica.com" target="_blank" title="ZedAfrica">ZedAfrica</a> | <a href="/?add-to-cart=85922">Purchase Membership</a>
+						<li>All Rights Reserved. TendersKenya &copy; <?php echo date("Y") ?> | By <a href="http://zedafrica.com" target="_blank" title="ZedAfrica">ZedAfrica</a> | <a href="/?add-to-cart=21">Purchase Membership</a>
 
 						</li>	
 

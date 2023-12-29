@@ -92,6 +92,10 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				<div class="clearfix row main_single_header_container">
+		<?php
+$exists = function_exists('wc_memberships_is_user_active_member');
+var_dump($exists);
+?>
 
 
   <?php /*
@@ -121,6 +125,26 @@
 			<header>
 				<div class="page-header"><h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1></div>
 			</header>
+
+
+			<?php 
+				//make sure you are writing this inside a wordpress loop
+				global $post;
+
+				echo do_shortcode('[​cbxwpbookmarkbtn object_id="'.$post->ID.'" object_type="'.$post->post_type.'"]');
+
+				global $post;
+
+$post_id    = $post->ID;
+$post_type  = $post->post_type;
+if(function_exists('show_cbxbookmark_btn')){
+ echo show_cbxbookmark_btn($post_id, $post_type);
+}
+
+			?>
+
+
+
 			<ul class="custom_meta custom_meta_list_single clearfix">
 				<li><span class="typcn typcn-home-outline"></span> <?php echo get_the_term_list( $post->ID, 'company', '', ', ', '' ); ?></li>
 				<li><span class="typcn typcn-attachment"></span><?php echo get_the_term_list( $post->ID, 'document-type', '', ', ', '' ); ?></li>
@@ -170,6 +194,7 @@
 		</div>
 
 		<div id="main" class="col-sm-8 col-sm-offset-2 clearfix" role="main">
+
 		
 			<section class="post_content clearfix" itemprop="articleBody">
 				<div class="tender_image">Our Facebook

@@ -27,6 +27,55 @@ function wp_bootstrap_custom_admin_footer() {
 add_filter('admin_footer_text', 'wp_bootstrap_custom_admin_footer');
 */
 
+function send_newsletters() {
+
+  require_once('inc/MailchimpAPI.php');
+  $mailchimp = new \DrewM\Mailchimp\Mailchimp('75709c96b7d9abd69e61de2d82dc8fad-us13');
+  $error_log_file = 'mailchimp_error_log.txt';
+
+  $return = get_transient('newsletter_sent');
+
+  echo '<pre style="margin-top:3rem; z-index:1000">';
+  print_r($return);
+  echo '</pre>';
+
+
+  $campaign_data = array(
+    'type' => 'regular',
+    'recipients' => array(
+      'list_id' => '2a4bb00624',
+      'segment_opts' => array(
+        'conditions' => array(
+          array(
+            'condition_type' => 'StaticSegment',
+            'field' => 'Tags',
+            'op' => 'contains',
+            'value' => ['medical']
+          )
+        )
+      ),
+
+    ),
+    'settings' => array(
+      'subject_line' => 'Tenders Kenya Newsletter',
+      'from_name' => 'Tenders Kenya',
+      'reply_to' => 'tenders@tenderskenya.co.ke',
+      'content_type' => 'html',
+      'content' => '<p>Hi *|FNAME|* *|LNAME|*,</p>, <p>Here are the latest tenders from Tenders Kenya.</p>',
+    ),
+  );
+
+  // $response = $mailchimp->post('campaigns', $campaign_data);
+
+  echo '<pre style="margin-top:3rem; z-index:1000">';
+  print_r($response);
+  echo '</pre>';
+      
+  
+
+}
+add_action('init', 'send_newsletters');
+
 
 
 
@@ -62,6 +111,26 @@ function woo_redirect_to_checkout() {
   return $checkout_url;
 }
 
+function check_item_before_add_to_cart_validation($passed, $product_id, $quantity) {
+  // Product ID to check in the cart
+  $product_id_to_check = 22;
+
+  // Check if the product is already in the cart
+  foreach (WC()->cart->get_cart() as $cart_item) {
+      if ($cart_item['product_id'] == $product_id_to_check) {
+          // If the product is already in the cart, redirect to the checkout page
+          $checkout_url = wc_get_checkout_url();
+          wp_safe_redirect($checkout_url);
+          exit;
+      }
+  }
+
+  return $passed;
+}
+
+add_filter('woocommerce_add_to_cart_validation', 'check_item_before_add_to_cart_validation', 10, 3);
+
+
 
 
 
@@ -94,6 +163,104 @@ function remove_order_notes( $fields ) {
      unset($fields['order']['order_comments']);
      return $fields;
 }
+
+// Add a custom field to the user registration form
+function custom_registration_form() {
+  ?>
+  <label for="industry">Preferred Category</label>
+  <select name="industry" id="industry">
+  <?php
+      // Get terms from your taxonomy (replace 'your_taxonomy' with your actual taxonomy name)
+
+      $terms = get_terms(array(
+        'taxonomy' => 'industry',
+        'hide_empty' => false,
+      ));
+
+
+      // Loop through terms and add options to the select field
+      foreach ($terms as $term) {
+        echo '<option value="' . esc_attr($term->term_id) . '">' . esc_html($term->name) . '</option>';
+      }
+      ?>
+  </select>
+
+￼
+  <?php
+}
+// add_action('woocommerce_checkout_after_customer_details', 'custom_registration_form');
+
+// Add a custom select field to the WooCommerce checkout page for a certain product
+function add_custom_select_field($fields) {
+  $specific_product_id = 21; // Replace with your actual product ID
+  $in_cart = false;
+
+
+  foreach (WC()->cart->get_cart() as $cart_item) {
+      if ($cart_item['product_id'] == $specific_product_id) {
+        echo "in cart " . $cart_item['product_id'] . $cart_item['product_name'];
+          $in_cart = true;
+          break;
+      }
+  }
+
+  // If the specific product is in the cart, add the custom select field
+  if ($in_cart) {
+      $taxonomy = 'industry'; // Replace with your actual taxonomy name
+
+      // Get terms from the specified taxonomy
+      $terms = get_terms(array(
+          'taxonomy' => $taxonomy,
+          'hide_empty' => false,
+      ));
+
+      // Create an array to store the options
+      $options = array(
+          '' => __('Select an option', 'woocommerce'),
+      );
+
+      // Loop through terms and add them to the options array
+      foreach ($terms as $term) {
+          $options[$term->term_id] = $term->name;
+      }
+
+      // Add the custom select field
+      $fields['billing']['industry'] = array(
+          'type' => 'select',
+          'label' => __('Industry Category', 'woocommerce'),
+          'class' => array('form-row-wide'),
+          'required' => true, // Set to true if the field is required
+          'options' => $options,
+          'multiple' => 'multiple',
+      );
+  }
+
+  return $fields;
+}
+add_filter('woocommerce_checkout_fields', 'add_custom_select_field');
+
+
+
+// Save the selected taxonomy term to user meta during checkout
+function save_custom_registration_field($customer_id) {
+
+  // Get the selected term from the submitted form data
+  $industry = sanitize_text_field($_POST['industry']);
+  // Update user meta with the selected term
+  update_user_meta($customer_id, 'industry', $industry);
+}
+add_action('woocommerce_checkout_update_user_meta', 'save_custom_registration_field');
+
+// Display the selected taxonomy term on the order details page
+function display_custom_field_on_order_details($order_id) {
+  $user_id = get_post_meta($order_id, '_customer_user', true);
+
+  // Check if the user has the preferred_category meta
+  if ($user_id && $industry = get_user_meta($user_id, 'industry', true)) {
+    echo '<p><strong>Industry:</strong> ' . esc_html($industry) . '</p>';
+  }
+}
+add_action('woocommerce_order_details_after_customer_details', 'display_custom_field_on_order_details');
 
 
 
@@ -159,6 +326,7 @@ register_post_type( 'tenders',
     'not_found_in_trash' => 'No Tender found in Trash',
     'parent' => 'Parent Tender'
     ),
+  'show_in_rest' => true,
   'public' => true,
   'menu_position' => 5,
   'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
@@ -175,6 +343,35 @@ register_post_type( 'tenders',
   )
 );
 }
+
+function register_rest_fields_for_tenders() {
+
+  if (function_exists('current_user_can')) {
+    if (current_user_can('administrator')) {
+      register_rest_field('tenders', 'tender_images', array(
+        'get_callback' => function($object) {
+          return array(
+            'image_1' => get_field('tender_image', $object['id']),
+            'image_2' => get_field('tender_image_2', $object['id']),
+            'company' => wp_get_post_terms($object['id'], 'company'),
+            'document-type' => wp_get_post_terms($object['id'], 'document-type')
+          );
+        },
+        'update_callback' => null,
+        'schema' => null
+      ));
+    } else {
+      status_header(403);
+      die('Only administrators can access this endpoint.');
+
+    }
+
+  } 
+
+
+}
+
+add_action('rest_api_init', 'register_rest_fields_for_tenders');
 
 function add_custom_taxonomies() {
   register_taxonomy('company', 'tenders', array(
@@ -216,6 +413,28 @@ function add_custom_taxonomies() {
     ),
     'rewrite' => array(
       'slug' => 'document-type', // This controls the base slug that will display before each term
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+
+  register_taxonomy('industry', 'tenders', array(
+    'hierarchical' => true,
+    'labels' => array(
+      'name' => _x( 'Industry', 'taxonomy general name' ),
+      'singular_name' => _x( 'Industries', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Industries' ),
+      'all_items' => __( 'All Industries' ),
+      'parent_item' => __( 'Parent Industries' ),
+      'parent_item_colon' => __( 'Parent Industry:' ),
+      'edit_item' => __( 'Edit Industry' ),
+      'update_item' => __( 'Update Industry' ),
+      'add_new_item' => __( 'Add New Industry' ),
+      'new_item_name' => __( 'New Industry Name' ),
+      'menu_name' => __( 'Industries' ),
+    ),
+    'rewrite' => array(
+      'slug' => 'industry', // This controls the base slug that will display before each term
       'with_front' => false, // Don't display the category base before "/locations/"
       'hierarchical' => true // This will allow URL's like "/locations/boston/cambridge/"
     ),
